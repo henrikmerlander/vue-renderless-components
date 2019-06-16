@@ -2,7 +2,7 @@
   <div>
     <h2>Dropdown extra</h2>
     <RenderlessExtra :value="value" @input="$emit('input', $event)" :max="max">
-      <div slot-scope="{ added, max, setAdded }" class="button-extra">
+      <div slot-scope="{ added, max, setAdded }">
         Extra bag
         <select :value="added" @input="setAdded($event.target.value)">
           <option value="0">0</option>

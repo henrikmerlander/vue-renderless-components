@@ -2,7 +2,7 @@
   <div>
     <h2>Range extra</h2>
     <RenderlessExtra :value="value" @input="$emit('input', $event)" :max="max">
-      <div slot-scope="{ added, max, setAdded }" class="button-extra">
+      <div slot-scope="{ added, max, setAdded }">
         Extra bag
         <input
           :value="added"
