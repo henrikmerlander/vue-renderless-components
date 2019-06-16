@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <h1>Renderless Vue Components</h1>
     <ButtonExtra v-model="$root.$data.added" :max="$root.$data.max"/>
     <DropdownExtra v-model="$root.$data.added" :max="$root.$data.max"/>
     <RangeExtra v-model="$root.$data.added" :max="$root.$data.max"/>
