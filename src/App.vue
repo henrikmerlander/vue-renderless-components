@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <ButtonExtra/>
-    <DropdownExtra/>
-    <RangeExtra/>
+    <ButtonExtra v-model="$root.$data.added" :max="$root.$data.max"/>
+    <DropdownExtra v-model="$root.$data.added" :max="$root.$data.max"/>
+    <RangeExtra v-model="$root.$data.added" :max="$root.$data.max"/>
   </div>
 </template>
 

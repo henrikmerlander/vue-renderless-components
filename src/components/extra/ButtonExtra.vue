@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>Button extra</h2>
-    <RenderlessExtra v-model="$root.$data.added" :min="$root.$data.min" :max="$root.$data.max">
+    <RenderlessExtra :value="value" @input="$emit('input', $event)" :max="max">
       <div slot-scope="{ added, max, setAdded }" class="button-extra">
         Extra bag
         <button @click="setAdded(added - 1)" :disabled="added <= 0" type="button">-</button>
@@ -20,6 +20,7 @@
 import RenderlessExtra from "@/components/extra/RenderlessExtra";
 
 export default {
+  props: ["value", "max"],
   components: {
     RenderlessExtra
   }

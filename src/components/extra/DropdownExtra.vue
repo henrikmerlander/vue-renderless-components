@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>Dropdown extra</h2>
-    <RenderlessExtra v-model="$root.$data.added" :max="$root.$data.max">
+    <RenderlessExtra :value="value" @input="$emit('input', $event)" :max="max">
       <div slot-scope="{ added, max, setAdded }" class="button-extra">
         Extra bag
         <select :value="added" @input="setAdded($event.target.value)">
@@ -17,6 +17,7 @@
 import RenderlessExtra from "@/components/extra/RenderlessExtra";
 
 export default {
+  props: ["value", "max"],
   components: {
     RenderlessExtra
   }
