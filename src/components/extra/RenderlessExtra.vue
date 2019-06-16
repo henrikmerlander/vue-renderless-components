@@ -3,7 +3,7 @@ export default {
   props: ["value", "max"],
   methods: {
     setAdded(added) {
-      this.$emit("input", added);
+      this.$emit("input", parseInt(added));
     }
   },
   render() {
