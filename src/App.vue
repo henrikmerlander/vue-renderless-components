@@ -2,17 +2,20 @@
   <div id="app">
     <ButtonExtra/>
     <DropdownExtra/>
+    <RangeExtra/>
   </div>
 </template>
 
 <script>
 import ButtonExtra from "@/components/extra/ButtonExtra";
 import DropdownExtra from "@/components/extra/DropdownExtra";
+import RangeExtra from "@/components/extra/RangeExtra";
 
 export default {
   components: {
     ButtonExtra,
-    DropdownExtra
+    DropdownExtra,
+    RangeExtra
   },
   name: "app"
 };
